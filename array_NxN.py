@@ -5,10 +5,10 @@ arr = [[randint(0, 10) for i in range(n)] for j in range(n)]
 print('Массив NxN')
 for parr in arr:
     print(parr)
-pob_diag = []
+po_diag = []
 for el_pob_diag in range(n):
-    pob_diag.append(arr[n-el_pob_diag-1][el_pob_diag])
+    po_diag.append(arr[n-el_pob_diag-1][el_pob_diag])
 print('')
-print(pob_diag)
-pob_diag.sort()
-print(f'Минимальный элемент = {pob_diag[0]}')
+print(po_diag)
+po_diag.sort()
+print(f'Минимальный элемент = {po_diag[0]}')

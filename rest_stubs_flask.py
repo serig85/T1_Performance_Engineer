@@ -22,7 +22,7 @@ def obhod(json_arg):
             continue
         if type(json_arg[i]) in [dict, list, tuple]:
             obhod(json_arg[i])
-    return json.dumps(json_arg, ensure_ascii=False)
+    return json.dumps(json_arg, ensure_ascii= False)
 
 
 
