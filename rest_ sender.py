@@ -11,6 +11,7 @@ json_primer = '''
     "Маша",
     "Игорь",
     "Таня",
+    {"проба": "bbbv", "age": 58},
     {"проба": "bbbv", "age": 58}
   ],
   "married": true,
@@ -18,6 +19,5 @@ json_primer = '''
 }'''
 json_primer = json_primer.encode('utf-8')
 
-
-re = requests.post("http://127.0.0.1:5000/stub", data=json_primer)
+re = requests.post("http://5.35.10.200:5000/stub", json_primer)
 print(re.text)

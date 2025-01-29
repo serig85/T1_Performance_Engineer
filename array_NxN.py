@@ -1,6 +1,10 @@
 from random import randint
 print('Для создания двумерного числового массива размерностью NxN заполненного случайными числами от 0 до 10')
-n = int(input('Введите число N: '))
+n = int(input('Введите число N >=3: '))
+while n < 3:
+    print('Число меньше трёх')
+    n = int(input('Введите число N >=3: '))
+
 arr = [[randint(0, 10) for i in range(n)] for j in range(n)]
 print('Массив NxN')
 for parr in arr:
